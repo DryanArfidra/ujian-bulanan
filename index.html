@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AJ.Official</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head> 
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#">
+        <img src="assets/logo.jpg" alt="Logo Nama Perusahaan" class="logo">
+      </a>
+      <nav class="main-nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="hero container">
+      <h1>AJ.Official</h1>
+      <p class="lead">Berawal dari kebutuhan sederhana di rumah, kami tumbuh menjadi mitra yang memahami makna kehangatan, kebersamaan, dan kualitas hidup yang lebih baik."</p>
+    </section>
+
+    <section id="projects" class="container projects-section">
+      <h2>Projects (Soon)</h2>
+      <div class="projects-grid">
+        <article class="card">
+          <img src="assets/id-11134210-23030-wjvd2sd0opov91.webp" alt="Flow Project 1">
+          <h3><a href="projects/project1.html">Sabun Aryan</a></h3>
+          <p>Penjualan online dari kebutuhan rumah tangga</p>
+          <a href="projects/project1.html" class="view-detail">View</a>
+        </article>
+        <!-- duplicate card untuk proyek lain -->
+      </div>
+      <div class="projects-grid">
+        <article class="card">
+          <img src="assets/id-11134210-23030-1f9ndu10opov9b.webp" alt="Flow Project 1">
+          <h3>Polish Body</h3>
+          <p>Penjualan online untuk accesoris body mobil</p>
+          <a href="projects/project1.html" class="view-detail">View</a>
+        </article>
+        <!-- duplicate card untuk proyek lain -->
+        </div>
+    </section>
+
+    <section id="contact" class="container contact-section">
+      <h2>Contact</h2>
+      <!-- Contoh: untuk Formspree ganti action -->
+      <form action="https://formspree.io/f/YOUR_ID" method="POST" class="contact-form">
+        <label>
+          Nama
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Pesan
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>📍 Lokasi: Bandung, Indonesia · ✉️ contact@r_xanz.id · © <span id="year"></span> Alfi jaya</p>
+    </div>
+  </footer>
+
+  <script>
+    // update copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
